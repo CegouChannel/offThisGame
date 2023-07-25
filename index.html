@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas></canvas>
+    <div class="panel_control">
+        <img name="left" class="lvlChange" src="assets/right-arrow.png" style="transform: rotate(180deg)">
+        <input type="text" class="changed_lvl" value="1" readonly>
+        <img name="right" class="lvlChange" src="assets/right-arrow.png">
+        <img src="assets/again.png" class="again">
+    </div>
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>
+
+<style>
+    .again{
+        margin-left: 9vw;
+    }
+
+    canvas{
+        margin-bottom: 4vw;
+    }
+    body {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .panel_control {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .lvlChange {
+        width: 1.5vw;
+        height: 1.5vw;
+    }
+
+    .again{
+        width: 3vw;
+        height: 3vw;
+    }
+
+    .panel_control>input {
+        width: 3vw;
+        height: 3vw;
+        font-size: 1.5vw;
+        pointer-events: none;
+        border: 1px solid;
+        text-align: center;
+    }
+
+    :active,
+    :hover,
+    :focus {
+        outline: 0;
+        outline-offset: 0;
+    }
+</style>
